@@ -37,3 +37,32 @@ The instance's state and networking properties were recorded before and after st
 - The root EBS volume persisted.
 - The automatically assigned public IPv4 address was checked before and after the stop/start operation.
 - Nginx availability was tested after the instance was started again.
+
+## EC2 Stop/Start Test
+
+### Objective
+
+Verify what happens to the EC2 server and its resources after stopping and starting the instance.
+
+### Test Results
+
+| Test | Result |
+|---|---|
+| Public IPv4 address changed | Yes |
+| EBS volume persisted | Yes |
+| Nginx automatically started | Yes |
+| Nginx listening on port 80 | Yes |
+| Local HTTP request | 200 OK |
+| External HTTP request | 200 OK |
+| Website accessible from browser | Yes |
+
+### Troubleshooting
+
+After the instance was started again, the website initially appeared unreachable from the browser.
+
+I verified the server layer first:
+
+```bash
+sudo systemctl status nginx
+sudo ss -lntp | grep :80
+curl -I http://localhost
