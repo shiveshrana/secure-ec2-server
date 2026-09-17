@@ -49,3 +49,17 @@ Nginx was installed on the Amazon Linux EC2 instance.
 ```bash
 sudo dnf update -y
 sudo dnf install nginx -y
+sudo systemctl start nginx
+sudo systemctl enable nginx
+nginx -v
+sudo systemctl status nginx
+curl http://localhost
+
+## Custom Webpage
+
+The default Nginx page was replaced with a custom HTML page describing the deployed infrastructure and security configuration.
+
+The webpage was placed at:
+
+```text
+/usr/share/nginx/html/index.html
