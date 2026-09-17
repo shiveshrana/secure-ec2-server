@@ -1,0 +1,17 @@
+# AWS credentials / configuration
+.aws/
+*.pem
+*.key
+
+# Environment variables
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Terraform (future-proofing)
+.terraform/
+*.tfstate
+*.tfstate.*
