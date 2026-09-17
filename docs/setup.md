@@ -39,3 +39,13 @@ The EC2 instance was accessed using SSH from a Windows PowerShell terminal.
 
 ```bash
 ssh -i "<PATH_TO_KEY>" ec2-user@<EC2_PUBLIC_IP>
+
+## Nginx Installation
+
+Nginx was installed on the Amazon Linux EC2 instance.
+
+### Installation
+
+```bash
+sudo dnf update -y
+sudo dnf install nginx -y
