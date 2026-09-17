@@ -42,3 +42,7 @@ HTTP access will be publicly available so that the Nginx website can be accessed
 - [EC2 Setup](docs/setup.md)
 - [Security Configuration](docs/security.md)
 - [Testing](docs/testing.md)
+
+## Architecture
+
+![Secure EC2 Server Architecture](diagrams/architecture.png)
