@@ -34,7 +34,7 @@ HTTP access will be publicly available so that the Nginx website can be accessed
 
 ## Project Status
 
-🚧 In Progress
+Complete 
 
 ## Documentation
 
