@@ -30,3 +30,12 @@ Inbound traffic:
 |---|---:|---|
 | SSH | 22 | Administrator public IP `/32` |
 | HTTP | 80 | `0.0.0.0/0` |
+
+## SSH Connection
+
+The EC2 instance was accessed using SSH from a Windows PowerShell terminal.
+
+### Connection
+
+```bash
+ssh -i "<PATH_TO_KEY>" ec2-user@<EC2_PUBLIC_IP>
